@@ -1,2 +1,2 @@
 # stock-comparison-project
-Comparing the stock prices of Google and Yahoo
+Comparing the stock prices of Google and Amazon 
