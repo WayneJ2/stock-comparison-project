@@ -62,7 +62,7 @@
   <div class="container">
 
     <div class="jumbotron text-center">
-      <h2>FY Stock Comparison: Google vs Yahoo</h2>
+      <h2>FY Stock Comparison: Google vs Amazon</h2>
       <p>Choose Timeframe:</p><select id="selDataset" onchange="optionChanged(this.value)"></select>
     </div>
 
@@ -71,7 +71,7 @@
       <table class="table">
         <tr>
           <th id="googlehdr">Google <br> Ticker = GOOG</th>
-          <th id="yahoohdr">Yahoo</th>
+          <th id="yahoohdr">Amazon <br> Ticker = AMZN</th>
         </tr>
         <tr style="font-size: 14px">
           <td>
@@ -79,7 +79,7 @@
              <br/> <p>Candlestick Chart for: </p>
           </td>
           <td>
-            <div id="yahoocandles"></div>
+            <div id="amazoncandles"></div>
             <br/><p>Candlestick Chart for:</p>
           </td>
         </tr>
@@ -89,7 +89,7 @@
             <br /><p>Time Series Chart for:</p>
           </td>
           <td>
-            <div id="yahooline"></div>
+            <div id="amazonline"></div>
             <br /><p>Times Series Chart for:</p>
           </td>
         </tr>
