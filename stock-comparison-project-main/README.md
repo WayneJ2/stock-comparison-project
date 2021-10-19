@@ -2,7 +2,12 @@
 Comparing the stock prices of Google and Amazon 
 
 References:
+
 --> Jupyter Notebook of Entire Project = Project 3 - Pjt3Data.ipynb
+--> Under Templates Folder = index.html
+--> Python Flask = app.py
+--> Under Static folder and data folder = amazonSD.json and googleSD.json.
+
 
 - Importing and Data Cleaning
 --The csv files (Amazon and Google) were extracted from the Kaggle website and used pandas to import the information on Jupyter notebook. Formatted the dataframe to be readible and split the timeframe into four quarters to see the comparison between Amazon and Google. Created the Python Flask (app.py) as the support for application to route it into javascript--To pull from the database using JSON. Added the data sources to the HTML file.
