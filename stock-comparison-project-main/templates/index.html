@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Google And Amazon Stock Prices</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<style>
+  table {
+    border: 2px solid black;
+    height: 300px;
+  }
+  th,
+  td {
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  th {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
+  /* .img-fluid {
+    width: 800px;
+    float: left;
+    margin-right: 50px;
+  }
+  .col-md-12 {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  #mars_facts {
+    position: relative;
+    left: 15px;
+  }
+
+
+  p {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+  }
+  .description-header {
+    text-align: center;
+  }
+  .hem-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; */
+  /* } */
+</style>
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h2>FY Stock Comparison: Google vs Amazon</h2>
+          <p>Choose Timeframe:</p><select id="selDataset" onchange="optionChanged(this.value)"></select>
+    </div>
+
+    
+    <div class="col-md-12">
+      
+      <table class="table">
+        <tr>
+          <th id="googlehdr">Google <br> Ticker = GOOG</th>
+          <th id="yahoohdr">Amazon <br> Ticker = AMZN</th>
+        </tr>
+        <tr style="font-size: 14px">
+          <td>
+            <div id="googlecandles"></div>
+          </td>
+          <td>
+            <div id="amazoncandles"></div>
+          </td>
+        </tr>
+        <tr style="font-size: 14px">
+          <td>
+            <div id="googleline"></div>
+          </td>
+          <td>
+            <div id="amazonline"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="./static/data/googleSD.json"></script>
+  <script src="./static/data/amazonSD.json"></script> -->
+  <script id="jsonData1">{{j_data1|tojson|safe}}</script>
+  <script id="jsonData2">{{j_data2|tojson|safe}}</script>
+  <script src="{{url_for('static', filename='stocks.js')}}"></script>
+
+
+</body>
+
+</html>
