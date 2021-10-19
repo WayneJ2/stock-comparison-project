@@ -4,8 +4,11 @@ Comparing the stock prices of Google and Amazon
 References:
 
 --> Jupyter Notebook of Entire Project = Project 3 - Pjt3Data.ipynb
+
 --> Under Templates Folder = index.html
+
 --> Python Flask = app.py
+
 --> Under Static folder and data folder = amazonSD.json and googleSD.json.
 
 
@@ -26,6 +29,9 @@ HTML
 
 
 The Amazon and Google data was taken from kaggle.
+
 Data sources: 
+
 https://www.kaggle.com/kannan1314/amazon-stock-price-all-time
+
 https://www.kaggle.com/akpmpr/google-stock-price-all-time
